@@ -137,9 +137,13 @@ function remote_test()
 function print_run_time()
 {
     run_end=`date +'%Y-%m-%d %H:%M:%S'`
-    echo -e "\033[32m\n\n Get BMC info 48h test end.    \033[0m"
-    echo -e "\033[32m     Start time: ${run_start}      \033[0m"
-    echo -e "\033[32m     End   time: ${run_end}\n\n    \033[0m"
+    echo -e "\033[32m\n\n Get BMC info 48h test end.  \033[0m"
+    echo -e "\033[32m Start time: ${run_start}        \033[0m"
+    echo -e "\033[32m End   time: ${run_end}  \n      \033[0m"
+    echo -e "\033[32m Log path: ${log_folder}         \033[0m"
+    echo -e "\033[32m Log file:                       \033[0m"
+    ls -lh ${log_folder}
+    echo "\n"
 }
 
 ### Main function
